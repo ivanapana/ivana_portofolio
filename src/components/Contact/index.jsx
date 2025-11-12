@@ -1,6 +1,7 @@
+// src/components/Contact/index.jsx
 import React, { useState } from "react";
-import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";
+import ContactInfo from "./ContactInfo";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,15 +10,39 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = () => {
-    alert("Pesan terkirim! (tes2)");
-    setFormData({ name: "", email: "", message: "" });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:3001/contacts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          createdAt: new Date().toISOString(),
+        }),
+      });
+
+      if (response.ok) {
+        alert("Pesan berhasil dikirim! 💖");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert("Gagal mengirim pesan. Coba lagi.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert(
+        "Terjadi kesalahan. Pastikan json-server sedang berjalan di port 3001."
+      );
+    }
   };
 
   return (
-    <section
-      id="contact"
+    <div
       className="min-h-screen flex items-center justify-center px-6 py-20"
+      id="contact"
     >
       <div className="max-w-5xl mx-auto w-full">
         <div className="text-center mb-16">
@@ -39,7 +64,7 @@ const Contact = () => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
