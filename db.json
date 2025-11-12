@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "id": "6425",
+      "name": "tes",
+      "email": "tes",
+      "message": "tes",
+      "createdAt": "2025-11-12T04:10:26.225Z"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "1",
+      "role": "Anggota Divisi Internal Development",
+      "organization": "UVICS",
+      "period": "Januari-Juni 2025",
+      "description": "Membantu tim dalam acara-acara internal dan pengembangan kapasitas anggota"
+    },
+    {
+      "id": "2",
+      "role": "PIC Internal Development",
+      "organization": "UVICS",
+      "period": "Juli-Sekarang",
+      "description": "Mengkordinasi acara-acara internal untuk meningkatkan keterlibatan anggota"
+    },
+    {
+      "id": "3",
+      "role": "Anggota Sie.Acara",
+      "organization": "Panitia Pemilihan Putra-Putri Remaja Kreatif GPdI Minahasa Utara 2023",
+      "period": "2023 ",
+      "description": "Menyusun acara sesuai rundown yang telah ditetapkan"
+    }
+  ]
+}
