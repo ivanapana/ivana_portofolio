@@ -1,3 +1,4 @@
+// src/components/Contact/ContactForm.jsx
 import React from "react";
 
 const ContactForm = ({ formData, setFormData, handleSubmit }) => {
@@ -14,6 +15,7 @@ const ContactForm = ({ formData, setFormData, handleSubmit }) => {
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-rose-500 focus:outline-none transition-colors"
             placeholder="Nama Anda"
+            required
           />
         </div>
 
@@ -26,7 +28,8 @@ const ContactForm = ({ formData, setFormData, handleSubmit }) => {
               setFormData({ ...formData, email: e.target.value })
             }
             className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-rose-500 focus:outline-none transition-colors"
-            placeholder="emailanda@gmail.com"
+            placeholder="email@example.com"
+            required
           />
         </div>
 
@@ -40,6 +43,7 @@ const ContactForm = ({ formData, setFormData, handleSubmit }) => {
             rows="5"
             className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-rose-500 focus:outline-none transition-colors resize-none"
             placeholder="Tulis pesan Anda di sini..."
+            required
           />
         </div>
 

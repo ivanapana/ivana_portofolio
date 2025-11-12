@@ -1,4 +1,6 @@
+// src/components/Contact/ContactInfo.jsx
 import React from "react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 const ContactInfo = () => {
   return (
@@ -10,11 +12,11 @@ const ContactInfo = () => {
 
         <div className="space-y-6">
           <a
-            href="mailto:ivana.sondakh@email.com"
+            href="mailto:s22310210@student.unklab.ac.id"
             className="flex items-center gap-4 text-gray-600 hover:text-rose-500 transition-colors group"
           >
-            <div className="p-3 bg-gradient-to-r from-rose-100 to-pink-100 rounded-xl group-hover:scale-110 transition-transform text-rose-500 text-xl">
-              📧
+            <div className="p-3 bg-gradient-to-r from-rose-100 to-pink-100 rounded-xl group-hover:scale-110 transition-transform">
+              <Mail className="text-rose-500" size={24} />
             </div>
             <div>
               <p className="font-medium">Email</p>
@@ -23,13 +25,13 @@ const ContactInfo = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/ivana-glory-m-sharon-sondakh-2821522a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/ivana-glory-m-sharon-sondakh-2821522a6"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 text-gray-600 hover:text-rose-500 transition-colors group"
           >
-            <div className="p-3 bg-gradient-to-r from-rose-100 to-pink-100 rounded-xl group-hover:scale-110 transition-transform text-rose-500 text-xl">
-              💼
+            <div className="p-3 bg-gradient-to-r from-rose-100 to-pink-100 rounded-xl group-hover:scale-110 transition-transform">
+              <Linkedin className="text-rose-500" size={24} />
             </div>
             <div>
               <p className="font-medium">LinkedIn</p>
@@ -45,8 +47,8 @@ const ContactInfo = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-4 text-gray-600 hover:text-rose-500 transition-colors group"
           >
-            <div className="p-3 bg-gradient-to-r from-rose-100 to-pink-100 rounded-xl group-hover:scale-110 transition-transform text-rose-500 text-xl">
-              🧠
+            <div className="p-3 bg-gradient-to-r from-rose-100 to-pink-100 rounded-xl group-hover:scale-110 transition-transform">
+              <Github className="text-rose-500" size={24} />
             </div>
             <div>
               <p className="font-medium">GitHub</p>
