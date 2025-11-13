@@ -1,34 +1,49 @@
 {
-  "contacts": [
-    {
-      "id": "6425",
-      "name": "tes",
-      "email": "tes",
-      "message": "tes",
-      "createdAt": "2025-11-12T04:10:26.225Z"
-    }
-  ],
+  "contacts": [],
   "organizations": [
     {
-      "id": "1",
+      "id": 1,
       "role": "Anggota Divisi Internal Development",
       "organization": "UVICS",
       "period": "Januari-Juni 2025",
       "description": "Membantu tim dalam acara-acara internal dan pengembangan kapasitas anggota"
     },
     {
-      "id": "2",
+      "id": 2,
       "role": "PIC Internal Development",
       "organization": "UVICS",
       "period": "Juli-Sekarang",
       "description": "Mengkordinasi acara-acara internal untuk meningkatkan keterlibatan anggota"
     },
     {
-      "id": "3",
+      "id": 3,
       "role": "Anggota Sie.Acara",
       "organization": "Panitia Pemilihan Putra-Putri Remaja Kreatif GPdI Minahasa Utara 2023",
-      "period": "2023 ",
+      "period": "2023",
       "description": "Menyusun acara sesuai rundown yang telah ditetapkan"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Sitem Pengecekan Poin Mahasiswa Secara Real-time",
+      "category": "Web Design",
+      "tech": "HTML, CSS",
+      "description": "Platform digital untuk melihat poin mahasiswa secara real-time"
+    },
+    {
+      "id": 2,
+      "title": "Klab.at space - Aplikasi order cafe",
+      "category": "Desktop App",
+      "tech": "C#, .NET, SQL Server",
+      "description": "Aplikasi pemesanan makanan dan minuman untuk cafe Klab.at Space"
+    },
+    {
+      "id": 3,
+      "title": "Unklab Information System (SIU)",
+      "category": "FSD Document",
+      "tech": "System Analysis, UML Diagrams (Use Case, Activity, Sequence, Class), Data Flow Diagram (DFD), Context Diagram, Functional & Non-Functional Requirements Documentation",
+      "description": "Menyusun dan merancang Functional Specification Document (FSD) untuk sistem akademik Universitas Klabat, mencakup identifikasi kebutuhan pengguna, analisis proses bisnis, serta pembuatan model sistem menggunakan UML dan DFD. Dokumen ini menjadi acuan pengembangan sistem berbasis web agar sesuai dengan kebutuhan fungsional, alur kerja akademik, dan standar dokumentasi perangkat lunak."
     }
   ]
 }

@@ -24,12 +24,14 @@ const Hero = ({ scrollToSection }) => {
           Memastikan kualitas perangkat lunak melalui pengujian yang teliti dan
           otomatisasi berbasis Python.
         </p>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* ✅ DIPERBAIKI: tag button ditutup dengan benar */}
           <button
-            onClick={() => scrollToSection("organization")}
+            onClick={() => scrollToSection("projects")}
             className="group px-8 py-4 bg-gradient-to-r from-rose-500 to-pink-600 text-white rounded-full font-medium hover:shadow-xl hover:scale-105 transition-all flex items-center gap-2"
           >
-            Lihat Organisasi Saya
+            Lihat Proyek Saya
             <ArrowRight
               size={20}
               className="group-hover:translate-x-1 transition-transform"

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Projects from "./components/Projects";
 import Organization from "./components/Organization";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -12,7 +13,7 @@ export default function App() {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // sesuaikan dengan tinggi navbar
+      const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -30,6 +31,7 @@ export default function App() {
     <>
       <Hero scrollToSection={scrollToSection} />
       <About />
+      <Projects /> {/* ← ganti di sini */}
       <Organization />
       <Contact />
       <Footer />
